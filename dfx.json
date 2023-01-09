@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "dAyum_token_backend": {
+      "main": "src/dAyum_token_backend/main.mo",
+      "type": "motoko"
+    },
+    "dAyum_token_frontend": {
+      "dependencies": [
+        "dAyum_token_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/dAyum_token_frontend/src/index.html"
+      },
+      "source": [
+        "src/dAyum_token_frontend/assets",
+        "dist/dAyum_token_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
